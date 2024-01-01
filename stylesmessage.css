@@ -44,14 +44,14 @@ p {
     }
 
     .poem-text {
-        font-size: 8px; /* Half the size of the current font */
+        font-size: 4px; /* Half the size of the current font */
         line-height: 1.4em; /* Adjust line height for readability */
         margin: 0; /* Remove margin from <p> elements if necessary */
     }
 
     .corner-image {
         position: absolute; /* Position images absolutely within the poem-container */
-        max-width: 80px; /* Double the size of images for mobile */
+        max-width: 160px; /* Double the size of images for mobile */
         width: 20%; /* Use percentage to keep the images responsive */
         height: auto; /* Maintain aspect ratio */
     }
