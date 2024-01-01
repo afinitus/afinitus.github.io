@@ -33,3 +33,27 @@ body {
 .tulipdance {
     max-width: 100px; /* Size for tulip images */
 }
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    #headerText {
+        font-size: 2em; /* Smaller font size for mobile */
+        margin-top: 10px; /* Less spacing on top */
+    }
+
+    #loveLetterButton {
+        width: 150px; /* Smaller button on mobile */
+        font-size: 0.8em;
+        padding: 8px 0;
+    }
+
+    .tulipdance {
+        max-width: 50px; /* Smaller tulips for mobile */
+    }
+
+    .container {
+        height: auto; /* Adjust height for mobile */
+    }
+
+    /* Adjust any other styles for mobile as needed */
+}

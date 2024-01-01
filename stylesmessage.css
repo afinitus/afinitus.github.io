@@ -32,3 +32,24 @@ body {
 p {
     margin: 0 0 10px 0; /* Spacing between lines */
 }
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .poem-container {
+        width: 95%; /* Adjust width for smaller screens */
+    }
+
+    .poem-text {
+        font-size: 0.8em; /* Smaller font size for mobile */
+    }
+
+    .corner-image {
+        max-width: 100px; /* Smaller images for mobile */
+    }
+
+    /* Adjust corner image positions if necessary */
+    .top-left, .top-right, .bottom-left, .bottom-right {
+        max-width: 100px; /* Adjust size for mobile */
+        /* Adjust position if needed */
+    }
+}
