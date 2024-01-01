@@ -42,38 +42,29 @@ p {
     }
 
     .poem-text {
-        font-size: 0.8em; /* Decrease font size */
-        line-height: 1.2em; /* Adjust line height */
+        font-size: 0.6em; /* Decrease font size for mobile */
+        line-height: 1.2em; /* Adjust line height for better readability */
     }
 
     .corner-image {
-        max-width: 80px; /* Decrease size of images */
-        position: relative; /* Change from absolute to relative */
-        display: block; /* Stack images as block */
-        margin: 10px auto; /* Center images and add some margin around them */
+        max-width: 50px; /* Decrease size of images for mobile */
+        margin: 0 auto; /* Center images in the available space */
+        display: block; /* Stack images as block elements on mobile */
     }
 
-    /* Update positions for corner images */
+    /* Adjust top and bottom images to appear above and below the text */
     .top-left, .top-right, .bottom-left, .bottom-right {
-        position: static; /* Let them flow in the document */
+        position: static; /* Default static position to flow with the document */
+        margin: 10px auto; /* Add margin to separate from text */
     }
 
-    /* Align the images to the center if they're not at the corners anymore */
-    .top-left, .top-right {
-        margin-bottom: 20px; /* Add some space below the top images */
-    }
-
-    .bottom-left, .bottom-right {
-        margin-top: 20px; /* Add some space above the bottom images */
-    }
-
-    /* Adjust the button size if necessary */
+    /* Adjust button size and spacing for mobile */
     #loveLetterButton {
-        width: 150px; /* Smaller button on mobile */
-        padding: 8px 0;
-        font-size: 0.8em;
+        width: 140px; /* Smaller button width */
+        font-size: 0.7em; /* Smaller font size */
+        padding: 8px; /* Adjust padding to match the new size */
+        margin: 20px auto; /* Ensure the button is centered and has space around it */
     }
-
-    /* Adjust any other elements as needed */
 }
 
+/* Continue with any other responsive adjustments as necessary */
