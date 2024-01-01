@@ -58,23 +58,23 @@ p {
 
     /* Position images in the corners of the poem-container */
     .top-left {
-        top: -25px; /* Position outside the container */
-        left: -25px;
+        top: -15px; /* Position outside the container */
+        left: -15px;
     }
 
     .top-right {
-        top: -25px; /* Position outside the container */
-        right: -25px;
+        top: -15px; /* Position outside the container */
+        right: -15px;
     }
 
     .bottom-left {
-        bottom: -25px; /* Position outside the container */
-        left: -25px;
+        bottom: -15px; /* Position outside the container */
+        left: -15px;
     }
 
     .bottom-right {
-        bottom: -50px; /* Position outside the container */
-        right: -50px;
+        bottom: -15px; /* Position outside the container */
+        right: -15px;
     }
 
     #loveLetterButton {
