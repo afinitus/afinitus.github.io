@@ -4,19 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Page</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Ensure this links to your CSS file -->
+    <link rel="stylesheet" href="gamestyles.css"> 
 </head>
 <body>
-    <div class="game-container">
-        <h2>Fun Game</h2>
-        <!-- Game implementation will go here -->
-        <!-- This could be a canvas element for a drawing game, a series of questions for a quiz, etc. -->
-        <p>Game coming soon...</p>
-        <!-- Add a link to go back to the main page -->
-        <a href="index.html">Return to Main Page</a>
+    <div class="grid-container">
+        <!-- Column Titles -->
+        <div class="grid-header">Us</div>
+        <div class="grid-header">You</div>
+        <div class="grid-header">Mystery</div>
+    
+        <!-- Buttons for the "Us" column -->
+        <div class="grid-item">
+            <button class="grid-button" onclick="revealMessage(this, 'every moment between us leaves a feeling in my heart that always makes me feel at ease')">500</button>
+            <p class="message" hidden></p>
+        </div>
+        <div class="grid-item">
+            <button class="grid-button" onclick="revealMessage(this, 'you mean so much to me and I just want to give you all the joy you give me and deserve')">500</button>
+            <p class="message" hidden></p>
+        </div>
+        <div class="grid-item">
+            <button class="grid-button" onclick="revealMessage(this, 'if I went in a rocket ship at 0.99c and came back several ship years later I would always come back to you')">500</button>
+            <p class="message" hidden></p>
+        </div>
+    
+        <!-- Buttons for the "You" column -->
+        <div class="grid-item">
+            <button class="grid-button" onclick="revealMessage(this, 'every decision we have both made up this point has led us both here and I couldnt be happier')">300</button>
+            <p class="message" hidden></p>
+        </div>
+        <div class="grid-item">
+            <button class="grid-button" onclick="revealMessage(this, 'your compliments always fluster me and make me feel like im on top of the world heh')">300</button>
+            <p class="message" hidden></p>
+        </div>
+        <div class="grid-item">
+            <button class="grid-button" onclick="revealMessage(this, 'to be honest, there is 1 fish in the sea *queue song when the sun hits*')">300</button>
+            <p class="message" hidden></p>
+        </div>
+    
+        <!-- Buttons for the "???" column -->
+        <div class="grid-item">
+            <button class="grid-button" onclick="revealMessage(this, 'maybe in another universe... no it is this universe for us')">100</button>
+            <p class="message" hidden></p>
+        </div>
+        <div class="grid-item">
+            <button class="grid-button" onclick="revealMessage(this, 'I would follow you anywhere 🐕')">100</button>
+            <p class="message" hidden></p>
+        </div>
+        <div class="grid-item">
+            <button class="grid-button" onclick="revealMessage(this, 'Congratulations! You won 1 free Boba at any place of your choosing!')">100</button>
+            <p class="message" hidden></p>
+        </div>
     </div>
+        <a href="index.html" class="return-home">Return to Main Page</a>
+    </div>
+
     <script>
-        // JavaScript for game logic can be added here
+        function revealMessage(button, messageText) {
+            const messageElement = button.nextElementSibling;
+            messageElement.textContent = messageText;
+            messageElement.hidden = false; // Show the message
+            button.hidden = true; // Hide the button
+        }
     </script>
 </body>
 </html>

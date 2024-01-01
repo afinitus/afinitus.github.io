@@ -1,0 +1,70 @@
+body {
+    background-color: pink;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates three columns */
+    grid-gap: 10px;
+    max-width: 600px;
+    margin: 50px auto; /* Centers the container and adds space on the top */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.grid-header {
+    font-weight: bold;
+    text-align: center;
+}
+
+.grid-item {
+    margin-bottom: 10px;
+}
+
+.grid-button {
+    width: 100%;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    font-size: 1em;
+}
+
+.grid-button:hover {
+    background-color: #f0f0f0;
+}
+
+.message {
+    display: none;
+    text-align: center;
+}
+
+.message:not([hidden]) {
+    display: block; /* Shown when 'hidden' attribute is not present */
+}
+
+a {
+    display: block;
+    margin: 20px auto;
+    text-decoration: none;
+    color: #000;
+}
+
+a.return-home {
+    position: fixed; /* Fixed position relative to the viewport */
+    left: 50%; /* Center the link */
+    bottom: 20px; /* 20px from the bottom */
+    transform: translateX(-50%); /* Offset the link by half its width to truly center it */
+    text-decoration: none;
+    color: #000;
+    background: #fff; /* Add a background color if you like */
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: Adds a shadow for better visibility */
+}
+
+/* ... existing styles ... */
