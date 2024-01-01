@@ -1,0 +1,34 @@
+body {
+    background-color: pink; /* Pink background */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Or any other font you prefer */
+}
+
+.poem-container {
+    position: relative;
+    width: 80%;
+    margin: 50px auto; /* Center the container with margin */
+}
+
+.poem-text {
+    color: black; /* Black text for the poem */
+    font-size: 1em; /* Smaller font size */
+    line-height: 1.4em; /* Adjust line height for readability */
+    font-weight: bold; /* Make the font bold */
+    text-align: center; /* Center the poem text */
+}
+
+.corner-image {
+    position: absolute;
+    max-width: 200px; /* Double the size of the images */
+}
+
+.top-left { top: 0; left: 0; }
+.top-right { top: 0; right: 0; }
+.bottom-left { bottom: 0; left: 0; }
+.bottom-right { bottom: 0; right: 0; }
+
+p {
+    margin: 0 0 10px 0; /* Spacing between lines */
+}
