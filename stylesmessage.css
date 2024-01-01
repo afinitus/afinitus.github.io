@@ -36,54 +36,51 @@ p {
 /* Existing styles... */
 
 @media (max-width: 768px) {
-    /* Styles for the poem container */
     .poem-container {
-        width: 100%; /* Full width */
-        padding: 20px; /* Padding instead of margin to prevent overflow */
-        box-sizing: border-box; /* Include padding in width calculation */
+        position: relative; /* This ensures that absolute positioning is relative to the container */
+        width: 90%; /* Adjust width for mobile */
+        margin: 50px auto; /* Center the container */
+        padding: 50px 0; /* Add padding to prevent overlap with corner images */
     }
 
-    /* Styles for the poem text */
     .poem-text {
-        font-size: 16px; /* Adjust font size for mobile, consider using pixels for more control */
-        line-height: 1.4em;
-        padding: 40px 0; /* Add padding to prevent text from overlapping with images */
+        font-size: 16px; /* Adjust font size for mobile */
+        line-height: 1.4em; /* Adjust line height for readability */
+        margin: 0; /* Remove margin from <p> elements if necessary */
     }
 
-    /* Styles for the corner images */
     .corner-image {
-        max-width: 40px; /* Smaller images for mobile */
-        position: fixed; /* Fixed position to place in corners of the viewport */
-        width: 8vw; /* Use viewport width to keep images responsive */
+        position: absolute; /* Position images absolutely within the poem-container */
+        max-width: 40px; /* Adjust size of images for mobile */
+        width: 10%; /* Use percentage to keep the images responsive */
         height: auto; /* Maintain aspect ratio */
     }
 
-    /* Position images in the corners */
+    /* Position images in the corners of the poem-container */
     .top-left {
-        top: 16px; /* Adjust as needed */
-        left: 16px;
+        top: -25px; /* Position outside the container */
+        left: -25px;
     }
 
     .top-right {
-        top: 16px;
-        right: 16px;
+        top: -25px; /* Position outside the container */
+        right: -25px;
     }
 
     .bottom-left {
-        bottom: 16px;
-        left: 16px;
+        bottom: -25px; /* Position outside the container */
+        left: -25px;
     }
 
     .bottom-right {
-        bottom: 16px;
-        right: 16px;
+        bottom: -25px; /* Position outside the container */
+        right: -25px;
     }
 
-    /* Adjust the button size and spacing for mobile */
     #loveLetterButton {
         width: auto; /* Auto width to fit content */
         padding: 8px 16px; /* Adjust padding */
-        font-size: 0.8em; /* Smaller font size */
+        font-size: 0.8em; /* Adjust font size for mobile */
         margin: 20px auto; /* Centered with margin */
     }
 }
