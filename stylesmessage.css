@@ -36,34 +36,55 @@ p {
 /* Existing styles... */
 
 @media (max-width: 768px) {
+    /* Styles for the poem container */
     .poem-container {
-        width: 90%; /* Give the container more width on small screens */
-        margin: 20px auto; /* Adjust margin as needed */
+        width: 100%; /* Full width */
+        padding: 20px; /* Padding instead of margin to prevent overflow */
+        box-sizing: border-box; /* Include padding in width calculation */
     }
 
+    /* Styles for the poem text */
     .poem-text {
-        font-size: 0.5em; /* Smaller font size for the poem text */
-        line-height: 1.2em; /* Adjust line height for readability */
+        font-size: 16px; /* Adjust font size for mobile, consider using pixels for more control */
+        line-height: 1.4em;
+        padding: 40px 0; /* Add padding to prevent text from overlapping with images */
     }
 
+    /* Styles for the corner images */
     .corner-image {
-        max-width: 40px; /* Make images even smaller on mobile */
-        margin: 8px auto; /* Adjust margin as needed */
-        display: block; /* Stack images as block elements on mobile */
+        max-width: 40px; /* Smaller images for mobile */
+        position: fixed; /* Fixed position to place in corners of the viewport */
+        width: 8vw; /* Use viewport width to keep images responsive */
+        height: auto; /* Maintain aspect ratio */
     }
 
-    /* Position the images above and below the text */
-    .top-left, .top-right, .bottom-left, .bottom-right {
-        position: static; /* Let the images flow in the normal document layout */
-        margin: 8px auto; /* Center and add margin to the images */
+    /* Position images in the corners */
+    .top-left {
+        top: 16px; /* Adjust as needed */
+        left: 16px;
+    }
+
+    .top-right {
+        top: 16px;
+        right: 16px;
+    }
+
+    .bottom-left {
+        bottom: 16px;
+        left: 16px;
+    }
+
+    .bottom-right {
+        bottom: 16px;
+        right: 16px;
     }
 
     /* Adjust the button size and spacing for mobile */
     #loveLetterButton {
-        width: 120px; /* Further decrease button width */
-        font-size: 0.6em; /* Decrease font size */
-        padding: 6px; /* Adjust padding to keep it proportional */
-        margin: 20px auto; /* Increase margin for better spacing */
+        width: auto; /* Auto width to fit content */
+        padding: 8px 16px; /* Adjust padding */
+        font-size: 0.8em; /* Smaller font size */
+        margin: 20px auto; /* Centered with margin */
     }
 }
 
