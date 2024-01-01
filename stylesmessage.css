@@ -44,7 +44,7 @@ p {
     }
 
     .poem-text {
-        font-size: 4px; /* Half the size of the current font */
+        font-size: 8cqmax; /* Half the size of the current font */
         line-height: 1.4em; /* Adjust line height for readability */
         margin: 0; /* Remove margin from <p> elements if necessary */
     }
@@ -58,18 +58,18 @@ p {
 
     /* Position images in the corners of the poem-container */
     .top-left {
-        top: -50px; /* Position outside the container */
-        left: -50px;
+        top: -25px; /* Position outside the container */
+        left: -25px;
     }
 
     .top-right {
-        top: -50px; /* Position outside the container */
-        right: -50px;
+        top: -25px; /* Position outside the container */
+        right: -25px;
     }
 
     .bottom-left {
-        bottom: -50px; /* Position outside the container */
-        left: -50px;
+        bottom: -25px; /* Position outside the container */
+        left: -25px;
     }
 
     .bottom-right {
