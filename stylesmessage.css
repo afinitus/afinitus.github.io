@@ -44,7 +44,7 @@ p {
     }
 
     .poem-text {
-        font-size: 8cqmax; /* Half the size of the current font */
+        font-size: 8px; /* Half the size of the current font */
         line-height: 1.4em; /* Adjust line height for readability */
         margin: 0; /* Remove margin from <p> elements if necessary */
     }
