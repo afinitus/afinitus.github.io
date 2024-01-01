@@ -18,16 +18,48 @@ body {
     text-align: center;
     margin-top: 20px; /* Adjust spacing as needed */
 }
+.button-container {
+    text-align: center; /* Center the buttons horizontally */
+}
+
+.button-container button {
+    display: inline-block; /* Align buttons side by side */
+    width: 200px; /* Adjust width as needed */
+    margin: 10px; /* Spacing between buttons */
+    padding: 10px 20px; /* Padding for top and bottom, and left and right */
+    font-size: 1em;
+    cursor: pointer;
+    color: #fff; /* White text */
+    border: none; /* No border */
+    border-radius: 20px; /* Oval shape */
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+#gameButton {
+    background-color: #008000; /* Green background */
+}
+
+
+#crosswordButton {
+    background-color: #880012; /* Green background */
+}
+
 
 #loveLetterButton {
     display: block;
     width: 200px; /* Adjust width as needed */
     margin: 20px auto; /* Centers the button */
-    padding: 10px 0; /* Padding for top and bottom */
+    padding: 10px 20px; /* Padding for top and bottom, and left and right */
     font-size: 1em;
     cursor: pointer;
-    z-index: 2; /* Ensures the button stays above the tulips */
-    position: relative; /* Needed for z-index to take effect */
+    background-color: #800080; /* Purple background */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    border-radius: 20px; /* Oval shape */
+    text-align: center;
+    text-decoration: none;
 }
 
 .tulipdance {
@@ -53,6 +85,12 @@ body {
 
     .container {
         height: auto; /* Adjust height for mobile */
+    }
+
+    .button-container button {
+        width: 150px; /* Smaller button on mobile */
+        font-size: 0.8em;
+        padding: 8px 16px;
     }
 
     /* Adjust any other styles for mobile as needed */
