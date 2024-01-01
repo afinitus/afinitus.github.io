@@ -37,33 +37,33 @@ p {
 
 @media (max-width: 768px) {
     .poem-container {
-        width: 90%; /* Increase width to give text more room */
-        margin: 30px auto; /* Reduce margin for smaller screens */
+        width: 90%; /* Give the container more width on small screens */
+        margin: 20px auto; /* Adjust margin as needed */
     }
 
     .poem-text {
-        font-size: 0.6em; /* Decrease font size for mobile */
-        line-height: 1.2em; /* Adjust line height for better readability */
+        font-size: 0.5em; /* Smaller font size for the poem text */
+        line-height: 1.2em; /* Adjust line height for readability */
     }
 
     .corner-image {
-        max-width: 50px; /* Decrease size of images for mobile */
-        margin: 0 auto; /* Center images in the available space */
+        max-width: 40px; /* Make images even smaller on mobile */
+        margin: 8px auto; /* Adjust margin as needed */
         display: block; /* Stack images as block elements on mobile */
     }
 
-    /* Adjust top and bottom images to appear above and below the text */
+    /* Position the images above and below the text */
     .top-left, .top-right, .bottom-left, .bottom-right {
-        position: static; /* Default static position to flow with the document */
-        margin: 10px auto; /* Add margin to separate from text */
+        position: static; /* Let the images flow in the normal document layout */
+        margin: 8px auto; /* Center and add margin to the images */
     }
 
-    /* Adjust button size and spacing for mobile */
+    /* Adjust the button size and spacing for mobile */
     #loveLetterButton {
-        width: 140px; /* Smaller button width */
-        font-size: 0.7em; /* Smaller font size */
-        padding: 8px; /* Adjust padding to match the new size */
-        margin: 20px auto; /* Ensure the button is centered and has space around it */
+        width: 120px; /* Further decrease button width */
+        font-size: 0.6em; /* Decrease font size */
+        padding: 6px; /* Adjust padding to keep it proportional */
+        margin: 20px auto; /* Increase margin for better spacing */
     }
 }
 
