@@ -10,26 +10,37 @@ const bodyParts = document.getElementsByClassName('body-part');
 
 // List of words
 const wordList = [
-  'market',
-  'knock',
+  'valorant',
+  'genshin',
   'smite',
-  'windy',
-  'coin',
-  'throw',
+  'smiski',
+  'kuromi',
+  'melody',
   'silence',
-  'bluff',
+  'phoenix',
   'downfall',
   'climb',
-  'lying',
+  'gecko',
   'weaver',
-  'snob',
+  'pikachu',
   'kickoff',
-  'match',
-  'coat',
+  'deathmatch',
+  'jungkook',
   'emerald',
   'coherent',
   'multiple',
   'square',
+  'poop',
+  'shorty',
+  'vandal',
+  'phantom',
+  'sonny',
+  'headphones',
+  'philippines',
+  'india',
+  'tocino',
+  'mango',
+  'sinigang',
 ];
 
 // Word that is selected to play
@@ -74,7 +85,7 @@ function successState() {
   setTimeout(() => {
     backdrop.classList.add('visible');
     finalMsg.classList.add('visible');
-    msgInfo.textContent = 'Hurrah! You won.';
+    msgInfo.textContent = 'WAHOOO WINNERRR!!!';
   }, 400);
 }
 
@@ -83,7 +94,7 @@ function failureState() {
   setTimeout(() => {
     backdrop.classList.add('visible');
     finalMsg.classList.add('visible');
-    msgInfo.textContent = `Oops! You lost. The right word is "${selectedWord}"`;
+    msgInfo.textContent = `good try the word was "${selectedWord}"`;
   }, 400);
 }
 
