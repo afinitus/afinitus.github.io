@@ -1,6 +1,6 @@
 body {
     position: relative;
-    background-color: pink; /* Pink background */
+    background-color: #C8A2C8; /* Pink background */
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Prevents horizontal scrollbar */
@@ -65,6 +65,7 @@ body {
 .tulipdance {
     max-width: 100px; /* Size for tulip images */
 }
+
 
 /* Responsive styles */
 @media (max-width: 600px) {
