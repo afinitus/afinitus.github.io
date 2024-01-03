@@ -1,27 +1,27 @@
 body {
-    background-color: #C8A2C8; /* Pink background */
+    background-color: #C8A2C8;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif; /* Or any other font you prefer */
+    font-family: Arial, sans-serif; 
 }
 
 .poem-container {
     position: relative;
     width: 80%;
-    margin: 50px auto; /* Center the container with margin */
+    margin: 50px auto;
 }
 
 .poem-text {
-    color: black; /* Black text for the poem */
-    font-size: 1em; /* Smaller font size */
-    line-height: 1.4em; /* Adjust line height for readability */
-    font-weight: bold; /* Make the font bold */
-    text-align: center; /* Center the poem text */
+    color: black; 
+    font-size: 1em;
+    line-height: 1.4em; 
+    font-weight: bold; 
+    text-align: center; 
 }
 
 .corner-image {
     position: absolute;
-    max-width: 200px; /* Double the size of the images */
+    max-width: 200px; 
 }
 
 .top-left { top: 0; left: 0; }
@@ -30,59 +30,56 @@ body {
 .bottom-right { bottom: 0; right: 0; }
 
 p {
-    margin: 0 0 10px 0; /* Spacing between lines */
+    margin: 0 0 10px 0;
 }
 
-/* Existing styles... */
 
 @media (max-width: 768px) {
     .poem-container {
         position: relative;
-        width: 90%; /* Adjust width for mobile */
-        margin: 50px auto; /* Center the container */
-        padding: 50px 0; /* Add padding to prevent overlap with corner images */
+        width: 90%; 
+        margin: 50px auto;
+        padding: 50px 0; 
     }
 
     .poem-text {
-        font-size: 8px; /* Half the size of the current font */
-        line-height: 1.4em; /* Adjust line height for readability */
-        margin: 0; /* Remove margin from <p> elements if necessary */
+        font-size: 8px; 
+        line-height: 1.4em; 
+        margin: 0; 
     }
 
     .corner-image {
-        position: absolute; /* Position images absolutely within the poem-container */
-        max-width: 160px; /* Double the size of images for mobile */
-        width: 20%; /* Use percentage to keep the images responsive */
-        height: auto; /* Maintain aspect ratio */
+        position: absolute; 
+        max-width: 160px; 
+        width: 20%;
+        height: auto; 
     }
 
-    /* Position images in the corners of the poem-container */
     .top-left {
-        top: -15px; /* Position outside the container */
+        top: -15px; 
         left: -15px;
     }
 
     .top-right {
-        top: -15px; /* Position outside the container */
+        top: -15px;
         right: -15px;
     }
 
     .bottom-left {
-        bottom: -15px; /* Position outside the container */
+        bottom: -15px;
         left: -15px;
     }
 
     .bottom-right {
-        bottom: -15px; /* Position outside the container */
+        bottom: -15px; 
         right: -15px;
     }
 
     #loveLetterButton {
-        width: auto; /* Auto width to fit content */
-        padding: 8px 16px; /* Adjust padding */
-        font-size: 14px; /* Adjust font size for mobile */
-        margin: 20px auto; /* Centered with margin */
+        width: auto; 
+        padding: 8px 16px; 
+        font-size: 14px; 
+        margin: 20px auto; 
     }
 }
 
-/* Continue with any other responsive adjustments as necessary */

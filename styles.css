@@ -1,98 +1,97 @@
 body {
     position: relative;
-    background-color: #C8A2C8; /* Pink background */
+    background-color: #C8A2C8; 
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevents horizontal scrollbar */
+    overflow-x: hidden; 
 }
 
 .container {
     position: relative;
     height: 100vh;
-    overflow: hidden; /* Keeps everything within the viewport */
+    overflow: hidden; 
 }
 
 #headerText {
-    color: red; /* Red color for the text */
-    font-size: 3em; /* Adjust size as needed */
+    color: red; 
+    font-size: 3em;
     text-align: center;
-    margin-top: 20px; /* Adjust spacing as needed */
+    margin-top: 20px; 
 }
 .button-container {
-    text-align: center; /* Center the buttons horizontally */
+    text-align: center;
 }
 
 .button-container button {
-    display: inline-block; /* Align buttons side by side */
-    width: 200px; /* Adjust width as needed */
-    margin: 10px; /* Spacing between buttons */
-    padding: 10px 20px; /* Padding for top and bottom, and left and right */
+    display: inline-block; 
+    width: 200px; 
+    margin: 10px;
+    padding: 10px 20px; 
     font-size: 1em;
     cursor: pointer;
-    color: #fff; /* White text */
-    border: none; /* No border */
-    border-radius: 20px; /* Oval shape */
+    color: #fff;
+    border: none;
+    border-radius: 20px; 
     text-align: center;
     text-decoration: none;
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    transition: background-color 0.3s;
 }
 
 #gameButton {
-    background-color: #008000; /* Green background */
+    background-color: #008000;
 }
 
 
 #crosswordButton {
-    background-color: #880012; /* Green background */
+    background-color: #880012; 
 }
 
 
 #loveLetterButton {
     display: block;
-    width: 200px; /* Adjust width as needed */
-    margin: 20px auto; /* Centers the button */
-    padding: 10px 20px; /* Padding for top and bottom, and left and right */
+    width: 200px;
+    margin: 20px auto; 
+    padding: 10px 20px; 
     font-size: 1em;
     cursor: pointer;
-    background-color: #800080; /* Purple background */
-    color: #fff; /* White text */
-    border: none; /* No border */
-    border-radius: 20px; /* Oval shape */
+    background-color: #800080; 
+    color: #fff;
+    border: none;
+    border-radius: 20px; 
     text-align: center;
     text-decoration: none;
 }
 
 .tulipdance {
-    max-width: 100px; /* Size for tulip images */
+    max-width: 100px; 
 }
 
 
-/* Responsive styles */
+
 @media (max-width: 600px) {
     #headerText {
-        font-size: 2em; /* Smaller font size for mobile */
-        margin-top: 10px; /* Less spacing on top */
+        font-size: 2em; 
+        margin-top: 10px; 
     }
 
     #loveLetterButton {
-        width: 150px; /* Smaller button on mobile */
+        width: 150px;
         font-size: 0.8em;
         padding: 8px 0;
     }
 
     .tulipdance {
-        max-width: 50px; /* Smaller tulips for mobile */
+        max-width: 50px; 
     }
 
     .container {
-        height: auto; /* Adjust height for mobile */
+        height: auto;
     }
 
     .button-container button {
-        width: 150px; /* Smaller button on mobile */
+        width: 150px; 
         font-size: 0.8em;
         padding: 8px 16px;
     }
 
-    /* Adjust any other styles for mobile as needed */
 }

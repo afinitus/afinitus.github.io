@@ -7,10 +7,10 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Creates three columns */
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     max-width: 600px;
-    margin: 50px auto; /* Centers the container and adds space on the top */
+    margin: 50px auto; 
     padding: 20px;
     box-sizing: border-box;
 }
@@ -44,7 +44,7 @@ body {
 }
 
 .message:not([hidden]) {
-    display: block; /* Shown when 'hidden' attribute is not present */
+    display: block; 
 }
 
 a {
@@ -55,16 +55,15 @@ a {
 }
 
 a.return-home {
-    position: fixed; /* Fixed position relative to the viewport */
-    left: 50%; /* Center the link */
-    bottom: 20px; /* 20px from the bottom */
-    transform: translateX(-50%); /* Offset the link by half its width to truly center it */
+    position: fixed;
+    left: 50%;
+    bottom: 20px; 
+    transform: translateX(-50%); 
     text-decoration: none;
     color: #000;
-    background: #fff; /* Add a background color if you like */
+    background: #fff; 
     padding: 10px 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: Adds a shadow for better visibility */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-/* ... existing styles ... */

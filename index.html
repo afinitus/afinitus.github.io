@@ -4,27 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>For Violaine</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
     <div class="container">
-        <h1 id="headerText">For Violaine</h1> <!-- Red text for the header -->
+        <h1 id="headerText">For Violaine</h1> 
         
-        <div class="button-container"> <!-- Container for buttons -->
+        <div class="button-container"> 
             <button id="gameButton" onclick="location.href='game.html';">Play Game</button>
             <button id="loveLetterButton" onclick="location.href='message.html';">Happy One Month <3</button>
             <button id="crosswordButton" onclick="location.href='hangman.html';">Play Hangmnan</button>
         </div>
         
-        <!-- Tulipdance GIFs scattered around -->
-        <!-- Generated with JavaScript -->
+
     </div>
 
-    <!-- Scripts for button click handling and tulip placement -->
+
     <script src="script.js"></script>
     <script>
-        // Function to randomly place tulips
-// Function to randomly place tulips with boundaries
+
     function placeTulips() {
         const container = document.querySelector('.container');
         const headerText = document.getElementById('headerText');
@@ -46,15 +44,15 @@
             do {
                 isOverlapping = false;
                 position = {
-                    left: Math.random() * (container.clientWidth - 100), // 100 is the width of the tulip
-                    top: Math.random() * (container.clientHeight - 100) // 100 is the height of the tulip
+                    left: Math.random() * (container.clientWidth - 100), 
+                    top: Math.random() * (container.clientHeight - 100) 
                 };
 
-                // Center the tulip
+
                 tulip.style.left = (position.left + 20) + 'px';
                 tulip.style.top = position.top + 'px';
 
-                // Check if the tulip overlaps with excluded areas
+
                 const tulipRect = tulip.getBoundingClientRect();
                 excludedAreas.forEach(area => {
                     if (!(tulipRect.right < area.left || 
@@ -64,13 +62,12 @@
                         isOverlapping = true;
                     }
                 });
-            } while (isOverlapping); // Repeat if overlapping
+            } while (isOverlapping);
 
             container.appendChild(tulip);
         }
     }
 
-    // Call the function when the window loads
     window.onload = placeTulips;
 
     </script>

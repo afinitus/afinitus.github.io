@@ -8,7 +8,6 @@ const playBtn = document.getElementById('play');
 const indication = document.getElementById('indication');
 const bodyParts = document.getElementsByClassName('body-part');
 
-// List of words
 const wordList = [
   'valorant',
   'genshin',
@@ -43,16 +42,15 @@ const wordList = [
   'sinigang',
 ];
 
-// Word that is selected to play
+
 let selectedWord = null;
-// Stores the count of no.of incorrectly typed letters
+
 let incorrectCount = 0;
-// Correct letters typed by the player
+
 const correctLetters = [];
-// Incorrect letters typed by the player
+
 const incorrectLetters = [];
 
-// Select a word randomly from wordList and initialize in the DOM
 function initializeWord() {
   selectedWord = wordList[Math.floor(Math.random() * wordList.length)];
   const noOfLetters = selectedWord.length;
@@ -63,7 +61,6 @@ function initializeWord() {
   }
 }
 
-// Displays an indication sliding from the bottom
 function displayIndication() {
   indication.classList.add('visible');
 
@@ -72,7 +69,7 @@ function displayIndication() {
   }, 2400);
 }
 
-// Update the figure when incorrect letters typed
+
 function updateFigure() {
   try {
     bodyParts[incorrectCount].style.display = 'block';
@@ -80,7 +77,7 @@ function updateFigure() {
   } catch (error) {}
 }
 
-// When player wins
+
 function successState() {
   setTimeout(() => {
     backdrop.classList.add('visible');
@@ -89,7 +86,7 @@ function successState() {
   }, 400);
 }
 
-// When player looses
+
 function failureState() {
   setTimeout(() => {
     backdrop.classList.add('visible');
@@ -98,12 +95,11 @@ function failureState() {
   }, 400);
 }
 
-// Check if typed key is part of the selected word and update in the DOM if required
 function check(ev) {
   const letterElements = document.querySelectorAll('.word .letter');
   const character = ev.key;
 
-  // Handle keyboard events
+
   if (
     !backdrop.classList.contains('visible') &&
     !indication.classList.contains('visible') &&
@@ -139,24 +135,24 @@ function check(ev) {
     }
   }
 
-  // Create a word from all letter items
+
   let formedWord = '';
   letterElements.forEach((value) => {
     formedWord += value.textContent;
   });
 
-  // Check if created word is correct
+
   if (formedWord === selectedWord) {
     successState();
   }
 
-  // Check if man was hung
+
   if (incorrectCount >= 6) {
     failureState();
   }
 }
 
-// Reset all variables and start a new game
+
 function startNewGame() {
   selectedWord = null;
   incorrectCount = 0;
@@ -172,9 +168,9 @@ function startNewGame() {
   initializeWord();
 }
 
-// Start the game
+
 initializeWord();
 
-// Event Listeners
+
 window.addEventListener('keyup', check);
 playBtn.addEventListener('click', startNewGame);

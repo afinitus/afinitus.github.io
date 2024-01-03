@@ -8,12 +8,11 @@
 </head>
 <body>
     <div class="grid-container">
-        <!-- Column Titles -->
+
         <div class="grid-header">Us</div>
         <div class="grid-header">You</div>
         <div class="grid-header">Mystery</div>
     
-        <!-- Buttons for the "Us" column -->
         <div class="grid-item">
             <button class="grid-button" onclick="revealMessage(this, 'every moment between us leaves a feeling in my heart that always makes me feel at ease')">500</button>
             <p class="message" hidden></p>
@@ -27,7 +26,7 @@
             <p class="message" hidden></p>
         </div>
     
-        <!-- Buttons for the "You" column -->
+
         <div class="grid-item">
             <button class="grid-button" onclick="revealMessage(this, 'every decision we have both made up this point has led us both here and I couldnt be happier')">300</button>
             <p class="message" hidden></p>
@@ -41,7 +40,7 @@
             <p class="message" hidden></p>
         </div>
     
-        <!-- Buttons for the "???" column -->
+
         <div class="grid-item">
             <button class="grid-button" onclick="revealMessage(this, 'maybe in another universe... no it is this universe for us')">100</button>
             <p class="message" hidden></p>
@@ -51,7 +50,7 @@
             <p class="message" hidden></p>
         </div>
         <div class="grid-item">
-            <button class="grid-button" onclick="revealMessage(this, 'Congratulations! You won 1 free Boba at any place of your choosing!')">100</button>
+            <button class="grid-button" onclick="revealMessage(this, 'CLAIMED: Congratulations! You won 1 free Boba at any place of your choosing!')">100</button>
             <p class="message" hidden></p>
         </div>
     </div>
@@ -62,8 +61,8 @@
         function revealMessage(button, messageText) {
             const messageElement = button.nextElementSibling;
             messageElement.textContent = messageText;
-            messageElement.hidden = false; // Show the message
-            button.hidden = true; // Hide the button
+            messageElement.hidden = false;
+            button.hidden = true;
         }
     </script>
 </body>
