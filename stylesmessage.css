@@ -12,6 +12,14 @@ body {
 }
 
 .poem-text {
+    background-color: #eeb872;
+    padding: 20px;
+    margin: auto;
+    max-width: fit-content;
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', cursive;
     color: black; 
     font-size: 1em;
     line-height: 1.4em; 
@@ -43,6 +51,7 @@ p {
     }
 
     .poem-text {
+        font-family: 'Dancing Script', cursive;
         font-size: 8px; 
         line-height: 1.4em; 
         margin: 0; 
