@@ -1,39 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | Nishank Gite</title>
   <link rel="stylesheet" href="/assets/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #0077b6;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+
+    nav a:hover {
+      background-color: #023e8a;
+      transition: 0.3s;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .content-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .description {
+      flex: 1;
+      padding-right: 30px;
+    }
+
+    .description h1 {
+      color: #0077b6;
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .description p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+
+    .description a {
+      color: #0077b6;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .description a:hover {
+      text-decoration: underline;
+    }
+
+    .profile-picture img {
+      width: 350px;
+      border-radius: 20px; /* Rounded rectangle */
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
 </head>
+
 <body>
   <header>
     <nav>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/experience/">Experience</a>
-        <a href="/projects/">Projects</a>
-        <a href="/contact/">Contact</a>
-      </nav>
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/experience/">Experience</a>
+      <a href="/projects/">Projects</a>
+      <a href="/contact/">Contact</a>
+    </nav>
   </header>
 
   <main>
     <div class="content-container">
-  <div class="description">
-    <h1>Nishank Gite</h1>
-    <p>Welcome to my personal website. I am currently pursuing a MASt in Applied Mathematics and Theoretical Physics at the University of Cambridge.</p>
-    <p>I have a strong background in machine learning, AI, and high-energy physics, and have co-founded an AI-driven startup. Feel free to explore my <a href="/projects/">Projects</a>, <a href="/experience/">Experience</a>, and <a href="/contact/">Contact</a> pages.</p>
-  </div>
+      <div class="description">
+        <h1>Nishank Gite</h1>
+        <p>Welcome to my personal website! I'm currently pursuing an MASt in Applied Mathematics and Theoretical Physics at the University of Cambridge. My interests span across <strong>High Energy Physics</strong> and <strong>Machine Learning</strong>, in the search for new physics.</p>
+        <p>With a strong foundation in high-energy physics and experience co-founding an AI startup, I strive to merge academic rigor with real-world impact. Feel free to explore my <a href="/projects/">Projects</a>, learn more about my <a href="/experience/">Experience</a>, or get in touch via the <a href="/contact/">Contact</a> page.</p>
+      </div>
 
-  <div class="profile-picture">
-    <img src="/assets/profile.jpg" alt="Profile Picture" />
-  </div>
-</div>
-
+      <div class="profile-picture">
+        <img src="/assets/profile.jpg" alt="Profile Picture" />
+      </div>
+    </div>
   </main>
 
   <footer>
     <p>&copy; 2024 Nishank Gite</p>
   </footer>
 </body>
+
 </html>
