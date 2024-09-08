@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0; /* Remove body margin to use full width */
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background: #333;
+    color: #fff;
+  }
+  
+  main {
+    max-width: 1200px; /* Increased max-width */
+    margin: 20px auto;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .description {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .profile-picture {
+    max-width: 300px; /* Adjust the image size */
+    flex-shrink: 0;
+  }
+  
+  .profile-picture img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: for rounded corners */
+  }
+  
+  .project {
+    display: flex;
+    align-items: center; /* Center the description vertically */
+    margin-bottom: 20px;
+    gap: 20px; /* Keep some space between the thumbnail and description */
+  }
+  
+  .project-thumb {
+    width: 400px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 
+      0 4px 8px rgba(0, 0, 0, 0.1),    /* Main shadow */
+      -4px 4px 0 rgba(255, 255, 255, 0.6), /* First "page" with white layer */
+      -8px 8px 0 rgba(0, 0, 0, 0.05),  /* Second "page" layer */
+      -12px 12px 0 rgba(255, 255, 255, 0.6), /* Third "page" with white layer */
+      -16px 16px 0 rgba(0, 0, 0, 0.05); /* Fourth "page" layer */
+  }
+  .project-info {
+    flex-grow: 2; /* Allow the project info to expand */
+    max-width: none;
+  }
+  
+  .project-info h3 {
+    margin-top: 0;
+  }
+  
+  .project-info a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .project-info a:hover {
+    background-color: #0056b3;
+  }
+  

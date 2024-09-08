@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Nishank Gite</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #0077b6;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+
+    nav a:hover {
+      background-color: #023e8a;
+      transition: 0.3s;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0077b6;
+      margin-bottom: 40px;
+    }
+
+    .project {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+
+    .project:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .project-info {
+      flex: 1;
+      padding: 0 20px;
+    }
+
+    .project-info h3 {
+      color: #0077b6;
+      margin-bottom: 10px;
+    }
+
+    .project-info p {
+      margin-bottom: 10px;
+    }
+
+    .project-info a {
+      background-color: #0077b6;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 500;
+    }
+
+    .project-info a:hover {
+      background-color: #023e8a;
+    }
+
+    .project-thumb {
+      width: 350px; /* Increased thumbnail size */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 15px; /* Rounded rectangle for project thumbnails */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/experience/">Experience</a>
+      <a href="/projects/">Projects</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 id="projects">Projects</h1>
+
+    <div class="project">
+      <div class="project-info">
+        <h3>Bottom versus Charm Jet Tagging using Machine Learning</h3>
+        <p class="date">August 2024</p>
+        <p>This research employs machine learning methodologies, particularly Graph Neural Networks (GNNs), to improve the precision and efficiency of b versus c jet tagging, with an emphasis on enhancing performance in the low transverse momentum (pT) region.</p>
+        <a href="/assets/pdfs/Gite_BottomVersusCharmTagging.pdf" download="">Download PDF</a>
+      </div>
+      <img src="/assets/images/Gite_BottomVersusCharmTagging_thumb.jpg" alt="Bottom versus Charm Jet Tagging" class="project-thumb" />
+    </div>
+
+    <div class="project">
+      <img src="/assets/images/Senior_Honors_Thesis_thumb.jpg" alt="Senior Honors Thesis" class="project-thumb" />
+      <div class="project-info">
+        <h3>Generative AI for Jet Tagging</h3>
+        <p class="date">May 2024</p>
+        <p>This thesis explores the use of generative AI to optimize jet tagging in high-energy physics, focusing on improving model performance in particle identification tasks.</p>
+        <a href="/assets/pdfs/Senior_Honors_Thesis_Nishank_Gite.pdf" download="">Download PDF</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-info">
+        <h3>Fine-Tuning Llama 2 for Story Generation</h3>
+        <p class="date">December 2023</p>
+        <p>In this project, we fine-tune Meta's Llama 2 model for generating creative and structured narratives based on short story prompts.</p>
+        <a href="/assets/pdfs/Fine-tuning_Llama_2_for_Story_Generation.pdf" download="">Download PDF</a>
+      </div>
+      <img src="/assets/images/Fine-tuning_Llama_2_thumb.jpg" alt="Fine-Tuning Llama 2" class="project-thumb" />
+    </div>
+
+    <div class="project">
+      <img src="/assets/images/Magnet_Design.jpg" alt="Magnet Design" class="project-thumb" />
+      <div class="project-info">
+        <h3>Magnet Design For Collider Physics</h3>
+        <p class="date">December 2023</p>
+        <p>Explore the process of designing a high-precision magnet system used for controlling particle trajectories in collider physics experiments.</p>
+        <a href="/assets/pdfs/Magnet_Design.pdf" download="">Download PDF</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-info">
+        <h3>Rutherford Scattering - Advanced Experimental Laboratory</h3>
+        <p class="date">December 2023</p>
+        <p>An investigation of Rutherford scattering, exploring the interaction of alpha particles with atomic nuclei, and analyzing the deflection patterns observed in the experiment.</p>
+        <a href="/assets/pdfs/Rutherford Scattering.pdf" download="">Download PDF</a>
+      </div>
+      <img src="/assets/images/Ruthergord Scattering.jpg" alt="Rutherford Scattering" class="project-thumb" />
+    </div>
+
+    <div class="project">
+      <img src="/assets/images/OPT_LAB.jpg" alt="Optical Pumping" class="project-thumb" />
+      <div class="project-info">
+        <h3>Optical Pumping - Advanced Experimental Laboratory</h3>
+        <p class="date">December 2023</p>
+        <p>This project examines the process of optical pumping, where atoms are transferred to specific energy states using polarized light, and its applications in various fields.</p>
+        <a href="/assets/pdfs/OPT_Lab.pdf" download="">Download PDF</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-info">
+        <h3>Carbon Dioxide Laser - Advanced Experimental Laboratory</h3>
+        <p class="date">December 2023</p>
+        <p>A comprehensive study on the design, calibration, and use of carbon dioxide lasers in advanced scientific experiments.</p>
+        <a href="/assets/pdfs/CO2 Laser Lab.pdf" download="">Download PDF</a>
+      </div>
+      <img src="/assets/images/CO2 Laser Lab.jpg" alt="CO2 Laser" class="project-thumb" />
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Nishank Gite</p>
+  </footer>
+</body>
+
+</html>

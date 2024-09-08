@@ -1,0 +1,13 @@
+title: Nishank Gite's Personal Website
+email: nishankgite@berkeley.edu
+description: "Nishank Gite's Portfolio Website"
+baseurl: "" 
+url: "https://afinitus.github.io"
+twitter_username: afinitus
+github_username: afinitus
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
